@@ -102,7 +102,7 @@ import LoadSubject from '@/services/LoadSubject'
 // import Banner from '../components/Banner'
 // import Rating from '../components/Rating'
 import Marking from '../components/Marking'
-// import Card from '../components/Card'
+import Card from '../components/Card'
 import List from '../components/List'
 import Scroller from '../components/Scroller'
 import Tags from '../components/Tags'
@@ -116,7 +116,8 @@ export default {
     Tags,
     DownloadApp,
     Loading,
-    Marking
+    Marking,
+    Card
   },
   data () {
     return {

@@ -13,8 +13,5 @@ new Vue({
   router,
   store,
   components: { App },
-  template: '<App/>',
-  mounted () {
-    store.commit('increment')
-  }
+  template: '<App/>'
 })

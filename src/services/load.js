@@ -6,6 +6,7 @@ export default {
       jsonp(url, null, function (err, data) {
         if (err) {
           console.error(`Load error:${url} ${err.message}`)
+          reject(err)
         } else {
           resolve(data)
         }

@@ -15,7 +15,7 @@ export default {
           url = baseUrl + '/coming_soon?count=8'
           break
         case tags[2]:
-          url = (baseUrl + '/top250?count=8')
+          url = baseUrl + '/top250?count=8'
       }
       load
         .load(url)
@@ -26,10 +26,12 @@ export default {
   getMovie () {
     return new Promise((resolve, reject) => {
       Promise
-        .all([this.getMovieByTag(tags[0]), this.getMovieByTag(tags[1]), this.getMovieByTag(tags[1])])
-        .then(data => {
-          resolve(data)
-        })
+        .all([
+          this.getMovieByTag(tags[0]),
+          this.getMovieByTag(tags[1]),
+          this.getMovieByTag(tags[1])
+        ])
+        .then(data => { resolve(data) })
         .catch(err => { console.log(`err when getMoive: ${err}`) })
     })
   }
