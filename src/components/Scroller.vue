@@ -1,8 +1,8 @@
 <template>
-  <div>
+  <div class="scroller">
     <div class="header">
       <h2>{{title}}</h2>
-      <a href="#">更多</a>
+      <a href="#" id="more">更多</a>
     </div>
     <div class="content">
       <ul class="hasCover" v-if="type === 'hasCover'">
@@ -32,6 +32,60 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
+.scroller {
+  margin-top: 1rem;
+}
+.header {
+  overflow: hidden;
+}
+.header a {
+  float: right;
+  margin-right: 0;
+  text-decoration: none;
+  color: #42bd56;
+  line-height: 2rem;
+  font-size: 1.44rem;
+}
+.header h2 {
+  display: inline-block;
+  margin: 0 0 0 1rem;
+  font-size: 1.8rem;
+}
 
+.hasCover {
+  overflow-x: auto;
+  /* display: flex;
+  flex-direction: row; */
+  list-style: none;
+  white-space: nowrap;
+  padding: 0;
+  text-align: center;
+}
+.hasCover li {
+  margin-left: 1rem;
+  display: inline-block;
+  width: 100px;
+  overflow: auto;
+}
+.hasCover li a {
+  color: #111;
+  text-decoration: none;
+}
+.hasCover li:first-child {
+  margin-left: 1rem;
+}
+.hasCover li span {
+  /* text-align: center;
+  display: inline-block;
+  width: 100%; */
+  display: inline-block;
+  font-size: 1.5rem;
+  margin-top: 1rem;
+}
+img {
+  width: 100%;
+  height: 143px;
+  display: block;
+}
 </style>

@@ -16,3 +16,34 @@ export default {
   name: 'download-app'
 }
 </script>
+
+<style scoped>
+.download-app {
+  padding: 0 0 2rem 0;
+  margin-top: 5rem;
+}
+.info {
+  overflow: hidden;
+  width: 50%;
+  margin: 0 auto 1.5rem;
+  font-size: 1.4rem;
+  color: #111;
+}
+img {
+  width: 4.8rem;
+  height: 4.8rem;
+  float: left;
+  margin-right: 1.2rem;
+}
+.info-content strong {
+  font-size: 2.4rem;
+}
+a {
+  text-decoration: none;
+  color: #42bd56;
+  display: block;
+  text-align: center;
+  font-size: 1.5rem;
+}
+</style>
+

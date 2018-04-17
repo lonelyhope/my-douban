@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="has-header">
     <scroller title="最受关注图书｜虚构类" type="hasCover" :items="novel"></scroller>
     <scroller title="最受关注图书｜非虚构类" type="hasCover" :items="reality"></scroller>
     <scroller title="豆瓣纸书" type="hasCover" :items="travel">

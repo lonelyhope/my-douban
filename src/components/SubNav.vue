@@ -26,12 +26,15 @@ export default {
 </script>
 
 <style>
+.sub-nav {
+  box-sizing: border-box;
+  width: 100%;
+}
 .quick-nav li a {
   text-decoration: none;
   margin: 0.2rem;
   color: #494949;
-  /* max-width: 100%; */
-  line-height: 1rem;
+  line-height: 2rem;
   padding: 1.2rem;
   text-align: center;
   overflow: hidden;

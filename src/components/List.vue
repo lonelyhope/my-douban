@@ -42,5 +42,33 @@ export default {
 </script>
 
 <style scoped>
-
+.thumbnail {
+  border-bottom: solid 1px gainsboro;
+  padding: 2.5rem 1.8rem 2.5rem 0;
+  margin-left: 1.8rem;
+  display: block;
+}
+h3, p, span, a {
+  color: #aaa;
+  text-decoration: none;
+}
+.content {
+  width: 100%;
+}
+.content h3 {
+  color: #494949;
+  font-size: 1.7rem;
+}
+.content p {
+  font-size: 1.2rem;
+}
+img {
+  width: 25.6%;
+  float: right;
+  height: 8.678rem;
+  margin-left: 2.5rem;
+}
+.label {
+  float: right;
+}
 </style>

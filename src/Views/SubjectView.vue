@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="subject has-header">
     <template v-if="!showLoading">
       <div class="subject-card">
         <h1 class="title">{{subject.title}}</h1>
@@ -31,7 +31,7 @@
             </span>
           </a>
         </div>
-        <marking>
+        <marking class="mark">
           <template slot="book" v-if="subject.author">
             <router-link :to="{ name: 'LoginView'}">想读</router-link>
             <router-link :to="{ name: 'LoginView'}">在读</router-link>
@@ -181,6 +181,66 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
+a {
+  text-decoration: none;
+}
 
+.subject {
+  font-size: 1.5rem;
+  color: #494949;
+}
+.subject-info {
+  overflow: hidden;
+}
+.right {
+  float: right;
+}
+.right a img {
+  width: 100px;
+  height: 150px;
+}
+.open-app {
+  color: #42bd56;
+}
+.mark {
+  display: flex;
+  text-decoration: row;
+  overflow: auto;
+}
+.mark a {
+  border: solid 1px #ffb712;
+  border-radius: 0.3rem;
+  color: #ffb712;
+  height: 36px;
+  /* width: 150px; */
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 12px;
+  padding: auto;
+}
+.mark a:last-child {
+  margin-right: 0;
+}
+
+.genres h2, .subject-pics h2, .subject-comments h2 {
+  font-size: 1.5rem;
+  margin: 0 0 1.5rem;
+  color: #aaa;
+}
+.subject-pics ul {
+  list-style: none;
+  white-space: nowrap;
+  overflow: auto;
+  padding-left: 0;
+}
+.subject-pics img {
+  width: 200px;
+  height: 300px;
+}
+.pic {
+  display: inline-block;
+}
 </style>

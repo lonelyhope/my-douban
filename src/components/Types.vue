@@ -94,3 +94,13 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+.type-list {
+ list-style: none;
+}
+a {
+  text-decoration: none;
+}
+</style>
+

@@ -19,6 +19,19 @@ export default {
 }
 </script>
 
-<style>
-
+<style scoped>
+ul {
+  list-style: none;
+  padding-left: 0;
+  overflow: hidden;
+}
+li a {
+  float: left;
+  text-decoration: none;
+  color: #494949;
+  border-radius: 1rem;
+  margin: 0.5rem;
+  padding: 0.5rem 1rem;
+  background-color: #f5f5f5;
+}
 </style>

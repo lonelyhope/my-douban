@@ -38,25 +38,39 @@ export default {
 
 <style scoped>
 .header-bar {
+  width: 100%;
   overflow: hidden;
-  border-bottom: solid 1px gainsboro;
+  border-bottom: 1px solid #f3f3f3;
+  display: flex;
+  position: fixed;
+  justify-content: space-between;
+  background-color: white;
+  z-index: 1000;
+  top: 0;
+  left: 0;
 }
 .title a, li a {
   color: #00b600;
   text-decoration: none;
 }
 h1 {
-  float: left;
-  margin: 0px;
-  margin-left: 2px;
+  display: inline-block;
+  margin: 0.3rem;
+  font-size: 2.8rem;
+  margin-left: 1rem;
+  margin-bottom: 0.5rem;
 }
 ul {
-  list-style-type: none;
-  text-decoration: none;
-  float: right;
+  vertical-align: middle;
+  list-style: none;
+  margin: 0;
+  padding: auto;
+  display: flex;
+  align-items: center;
 }
-li {
-  display: inline;
-  margin: 2px;
+li a {
+  font-size: 1.6rem;
+  display: inline-block;
+  margin: 0.4rem;
 }
 </style>

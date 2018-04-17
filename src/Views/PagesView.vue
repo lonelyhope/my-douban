@@ -1,7 +1,7 @@
 <template>
   <div>
-    <header-bar></header-bar>
-    <router-view></router-view>
+    <header-bar class="bar"></header-bar>
+    <router-view id="content"></router-view>
   </div>
 </template>
 
@@ -18,5 +18,4 @@ export default {
 </script>
 
 <style>
-
 </style>

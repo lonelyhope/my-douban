@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="has-header">
     <template v-if="!showLoading">
       <div class="info">
         <h2>
@@ -95,5 +95,38 @@ export default {
 </script>
 
 <style>
-
+.badge {
+  color: white;
+  background-color: #FF8263;
+  padding: 0.1rem 0.5rem;
+  line-height: 1.8rem;
+  font-size: 1.2rem;
+  border-radius: 0.2rem;
+}
+.poster img {
+  width: 100%;
+  max-width: 22rem;
+}
+.poster {
+  text-align: center;
+}
+.detail {
+  font-size: 1.4rem;
+}
+.detail span {
+  float: left;
+  line-height: 150%;
+  color: #666666;
+}
+ul {
+  list-style: none;
+}
+h2 {
+  font-size: 1.68rem;
+}
+.describe h2 {
+  color: #072;
+  font-weight: bold;
+  margin: 2rem 0;
+}
 </style>

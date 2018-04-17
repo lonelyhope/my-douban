@@ -29,7 +29,7 @@ export default {
         .all([
           this.getMovieByTag(tags[0]),
           this.getMovieByTag(tags[1]),
-          this.getMovieByTag(tags[1])
+          this.getMovieByTag(tags[2])
         ])
         .then(data => { resolve(data) })
         .catch(err => { console.log(`err when getMoive: ${err}`) })

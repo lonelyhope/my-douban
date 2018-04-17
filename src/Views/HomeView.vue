@@ -1,6 +1,6 @@
 <template>
   <div>
-    <sub-nav></sub-nav>
+    <sub-nav class="has-header"></sub-nav>
     <list :items="events"></list>
     <infinite-loading @infinite="onInfinite">
       <loading slot="spinner"></loading>

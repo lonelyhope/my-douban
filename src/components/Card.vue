@@ -44,3 +44,22 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+.desc a {
+  text-decoration: none;
+}
+.desc a img{
+  width: 36px;
+  height: 36px;
+  border-radius: 18px;
+}
+.desc a {
+  display: inline-block;
+}
+.user-info strong {
+  font-size: 1.7rem;
+  line-height: 1;
+  color: #494949;
+}
+</style>
