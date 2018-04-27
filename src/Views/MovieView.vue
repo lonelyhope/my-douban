@@ -33,6 +33,8 @@ export default {
     async getMovie () {
       try {
         let movies = await Movie.getMovie()
+        console.log('get Movies:')
+        console.log(movies)
         this.hotMovies = movies[0].subjects
         this.newMovies = movies[1].subjects
         this.topMovies = movies[2].subjects

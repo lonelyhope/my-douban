@@ -88,4 +88,6 @@ img {
   height: 143px;
   display: block;
 }
+/* onlyString */
+
 </style>

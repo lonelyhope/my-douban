@@ -99,7 +99,23 @@ export default {
 .type-list {
  list-style: none;
 }
+ul {
+  overflow: hidden;
+  padding-left: 0;
+}
 a {
   text-decoration: none;
+  line-height: 2.5rem;
+  border-radius: 1rem;
+  color: #494949;
+  font-size: 1.5rem;
+  background-color: #f5f5f5;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin: 0.2rem 0.5rem;
+  float: left;
+}
+h2 {
+  color: #aaa;
 }
 </style>

@@ -7,9 +7,6 @@
 
 <script>
 export default {
-  name: 'marking',
-  data () {
-    return {}
-  }
+  name: 'marking'
 }
 </script>
